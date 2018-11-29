@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4651655545755386}
   - component: {fileID: 212569908634963180}
   - component: {fileID: 60761105426015766}
+  - component: {fileID: 50738133814643364}
+  - component: {fileID: 70515939248103386}
   m_Layer: 0
   m_Name: magnet
   m_TagString: magnetico
@@ -41,6 +43,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50738133814643364
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1054017017809070}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!60 &60761105426015766
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -75,6 +97,21 @@ PolygonCollider2D:
       - {x: 0.26666668, y: 0.026666667}
       - {x: 0.26666668, y: 0.06666667}
       - {x: 0.14666668, y: 0.2}
+--- !u!70 &70515939248103386
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1054017017809070}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.85333335, y: 0.85333335}
+  m_Direction: 0
 --- !u!212 &212569908634963180
 SpriteRenderer:
   m_ObjectHideFlags: 1

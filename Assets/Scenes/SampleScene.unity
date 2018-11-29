@@ -203,6 +203,8 @@ GameObject:
   - component: {fileID: 1848287590}
   - component: {fileID: 1848287589}
   - component: {fileID: 1848287594}
+  - component: {fileID: 1848287595}
+  - component: {fileID: 1848287596}
   m_Layer: 0
   m_Name: zombie_stand
   m_TagString: Untagged
@@ -216,7 +218,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1848287588}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c5a267b48e7dae4cac2108f4b1dbf9e, type: 3}
   m_Name: 
@@ -227,7 +229,7 @@ PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1848287588}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -272,7 +274,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1848287588}
   m_BodyType: 0
-  m_Simulated: 0
+  m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -341,7 +343,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1848287594
 MonoBehaviour:
@@ -349,12 +351,84 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1848287588}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03aa421be4c60aa458abaf9c4983f79f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!114 &1848287595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1848287588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f672e227f499f84fb5c01ea361b92ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!70 &1848287596
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1848287588}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.007191241, y: -0.17977953}
+  m_Size: {x: 1.1541475, y: 1.8404408}
+  m_Direction: 0
+--- !u!1001 &1857007315
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4191937991769886, guid: 32a61164cbe068f47a3a300e042e9a3a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5.3772106
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191937991769886, guid: 32a61164cbe068f47a3a300e042e9a3a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.466387
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191937991769886, guid: 32a61164cbe068f47a3a300e042e9a3a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191937991769886, guid: 32a61164cbe068f47a3a300e042e9a3a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191937991769886, guid: 32a61164cbe068f47a3a300e042e9a3a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191937991769886, guid: 32a61164cbe068f47a3a300e042e9a3a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191937991769886, guid: 32a61164cbe068f47a3a300e042e9a3a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191937991769886, guid: 32a61164cbe068f47a3a300e042e9a3a, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748304343699276, guid: 32a61164cbe068f47a3a300e042e9a3a, type: 2}
+      propertyPath: m_TagString
+      value: magnetico
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 32a61164cbe068f47a3a300e042e9a3a, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &1943264172
 Prefab:
   m_ObjectHideFlags: 0
@@ -392,7 +466,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4049670432873694, guid: 3674dd1746a7656459380550839108bc, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 61471081329456814, guid: 3674dd1746a7656459380550839108bc,
         type: 2}
