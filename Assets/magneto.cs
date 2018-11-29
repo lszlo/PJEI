@@ -20,6 +20,7 @@ public class magneto : MonoBehaviour {
             other.transform.parent = transform;
         }
     }
+
     
        
     
